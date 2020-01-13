@@ -48,14 +48,18 @@ class MainQueueExample {
 ===============================================================================================================
  */
 
-DispatchQueue.global(qos: .userInitiated).async { [weak self] in
-  guard let self = self else {
-    return
-  }
-  let overlayImage = // get image data
-  DispatchQueue.main.async { [weak self] in // render
-  }
+class Test {
+    func TestGlobal() {
+        DispatchQueue.global(qos: .userInitiated).async { [weak self] in
+          guard let self = self else {
+            return
+          }
+          DispatchQueue.main.async { [weak self] in // render on UI
+          }
+        }
+    }
 }
+
 
 
 
@@ -69,26 +73,33 @@ DispatchQueue.global(qos: .userInitiated).async { [weak self] in
  Read-Write Problem Solution using ------- barrier -------- barrier task will run alone rest will work concurrent
  =============================================================================================================
  */
-private let concurrentPhotoQueue =
-DispatchQueue(
-  label: "com.raywenderlich.GooglyPuff.photoQueue",
-  attributes: .concurrent)
 
-func addPhoto(_ photo: Photo) {
-  concurrentPhotoQueue.async(flags: .barrier) { [weak self] in
-    guard let self = self else {
-      return
+class Photo {}
+
+class ThreadSafeExample {
+    var unsafePhotos:[Photo] = []
+    
+    private let concurrentPhotoQueue =
+    DispatchQueue(
+      label: "com.raywenderlich.GooglyPuff.photoQueue",
+      attributes: .concurrent)
+
+    func addPhoto(_ photo: Photo) {
+      concurrentPhotoQueue.async(flags: .barrier) { [weak self] in
+        guard let self = self else {
+          return
+        }
+        self.unsafePhotos.append(photo)
+      }
     }
-    self.unsafePhotos.append(photo)
-  }
-}
 
-var photos: [Photo] {
-  var photosCopy: [Photo]!
-  concurrentPhotoQueue.sync {
-    photosCopy = self.unsafePhotos
-  }
-  return photosCopy
+    var photos: [Photo] {
+      var photosCopy: [Photo]!
+      concurrentPhotoQueue.sync {
+        photosCopy = self.unsafePhotos
+      }
+      return photosCopy
+    }
 }
 
 

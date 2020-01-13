@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <FileRef
-      location = "group:GCD-Basics.playground">
-   </FileRef>
-   <FileRef
-      location = "group:/Users/mohitkumar/Documents/Learning/Swift-iOS/GCD-Group-Cancel-Simaphore-DispatchSource.playground">
-   </FileRef>
+   <Group
+      location = "container:"
+      name = "Multi-Threading">
+      <FileRef
+         location = "group:GCD-Basics.playground">
+      </FileRef>
+      <FileRef
+         location = "group:/Users/mohitkumar/Documents/Learning/Swift-iOS/GCD-Group-Cancel-Simaphore-DispatchSource.playground">
+      </FileRef>
+   </Group>
 </Workspace>
