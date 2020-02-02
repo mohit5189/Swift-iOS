@@ -14,7 +14,10 @@
             location = "group:Queue.playground">
          </FileRef>
          <FileRef
-            location = "group:/Users/mohitkumar/Documents/Learning/Swift-iOS/LinkedList-1.playground">
+            location = "group:/Users/mohitkumar/Documents/Learning/Swift-iOS/Singly-LinkedList.playground">
+         </FileRef>
+         <FileRef
+            location = "group:Doubly-LinkedList.playground">
          </FileRef>
       </Group>
    </Group>

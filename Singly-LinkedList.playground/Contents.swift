@@ -17,7 +17,7 @@ LinkedList Drawback:
 
 //=========  Construct Linkedlist / Traverse /Insert / Delete / Delete LinkedList  =================================
 
-class Node <T>: Equatable {
+class Node <T> {
     
     // Can't have struct since struct will cause recursive issue
     var value: T
@@ -25,10 +25,6 @@ class Node <T>: Equatable {
     
     init(value: T) {
         self.value = value
-    }
-    
-    static func == (lhs: Node<T>, rhs: Node<T>) -> Bool {
-        return lhs == rhs
     }
 }
 
@@ -106,17 +102,38 @@ class SinglyLinkedList <T> {
         /*
          Traverse the list one by one and keep putting the node addresses in a Hash Table. At any point, if NULL is reached then return false and if next of current node points to any of the previously stored nodes in Hash then return true.
          */
-        var nodes = [Node<T>]()
-        var headCopy = head
-        while headCopy != nil {
-            if nodes.contains(headCopy!) {
-                return true
-            } else {
-                nodes.append(headCopy!)
-            }
-            headCopy = headCopy?.next
-        }
+//        var nodes = [Node<T>]()
+//        var headCopy = head
+        // TODO: find way for generics
+//        while headCopy != nil {
+//            if let elementExist = nodes.contains{ $0 == headCopy! } {
+//                return true
+//            } else {
+//                nodes.append(headCopy!)
+//            }
+//            headCopy = headCopy?.next
+//        }
         return false
+    }
+    
+    func createLoop() {
+        currentNode?.next = head
+    }
+    
+    func reverse() {
+        var currentNode = head
+        var nextNode: Node<T>?
+        var prevNode: Node<T>?
+
+        while currentNode != nil {
+            nextNode = currentNode?.next
+            currentNode?.next = prevNode
+            
+            prevNode = currentNode
+            currentNode = nextNode
+        }
+        
+        head = prevNode
     }
 }
 
@@ -132,4 +149,7 @@ linkedList.printLinkedList()
 linkedList.printLinkedList()
 linkedList.printLinkedList()
 linkedList.findMiddleElement()
+linkedList.reverse()
+linkedList.printLinkedList()
+linkedList.createLoop()
 print("\n loop exist = \(linkedList.isLoopExist())")
