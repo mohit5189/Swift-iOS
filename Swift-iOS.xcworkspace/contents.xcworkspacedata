@@ -3,6 +3,23 @@
    version = "1.0">
    <Group
       location = "container:"
+      name = "DS">
+      <Group
+         location = "container:"
+         name = "Stack">
+         <FileRef
+            location = "group:Stack.playground">
+         </FileRef>
+         <FileRef
+            location = "group:Queue.playground">
+         </FileRef>
+         <FileRef
+            location = "group:/Users/mohitkumar/Documents/Learning/Swift-iOS/LinkedList-1.playground">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
+      location = "container:"
       name = "Multi-Threading">
       <FileRef
          location = "group:GCD-Basics.playground">
