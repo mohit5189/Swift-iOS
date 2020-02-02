@@ -19,6 +19,9 @@
          <FileRef
             location = "group:Doubly-LinkedList.playground">
          </FileRef>
+         <FileRef
+            location = "group:Tree.playground">
+         </FileRef>
       </Group>
    </Group>
    <Group
