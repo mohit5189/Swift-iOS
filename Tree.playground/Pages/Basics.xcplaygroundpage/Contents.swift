@@ -83,6 +83,25 @@ class TreeExample {
             current = current?.right
         }
     }
+    
+    func search(_ node: Node?, _ value: Int) -> Node? {
+
+        if node == nil {
+            return node
+        }
+
+        if let nodeData = node?.data {
+            if value == nodeData {
+                return node
+            }
+            if value < nodeData {
+                return search(node?.left, value)
+            } else if value > nodeData {
+                return search(node?.right, value)
+            }
+        }
+        return nil
+    }
 }
 
 var obj = TreeExample()
@@ -95,3 +114,4 @@ print("\n")
 obj.inOrder(obj.head)
 print("\n")
 obj.inOrderWithoutRecursion()
+print("found = \(String(describing: obj.search(obj.head, 12)?.data))")

@@ -26,12 +26,9 @@
    </Group>
    <Group
       location = "container:"
-      name = "Multi-Threading">
+      name = "iOS Swift">
       <FileRef
          location = "group:GCD-Basics.playground">
-      </FileRef>
-      <FileRef
-         location = "group:/Users/mohitkumar/Documents/Learning/Swift-iOS/GCD-Group-Cancel-Simaphore-DispatchSource.playground">
       </FileRef>
    </Group>
 </Workspace>

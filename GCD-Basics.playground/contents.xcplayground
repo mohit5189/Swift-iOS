@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='5.0' target-platform='ios'>
-    <timeline fileName='timeline.xctimeline'/>
+<playground version='6.0' target-platform='ios'>
+    <pages>
+        <page name='GCD basics'/>
+        <page name='Thread Cancel'/>
+        <page name='Dispatch Group'/>
+        <page name='Semaphore'/>
+        <page name='Diapatch Source'/>
+        <page name='GCD Deadlock'/>
+        <page name='Custom Queue'/>
+    </pages>
 </playground>
