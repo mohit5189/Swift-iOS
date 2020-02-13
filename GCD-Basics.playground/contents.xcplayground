@@ -8,5 +8,6 @@
         <page name='Diapatch Source'/>
         <page name='GCD Deadlock'/>
         <page name='Custom Queue'/>
+        <page name='Operations'/>
     </pages>
 </playground>

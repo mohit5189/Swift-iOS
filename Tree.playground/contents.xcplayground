@@ -6,5 +6,8 @@
         <page name='SmallestValue'/>
         <page name='CanRepresentBST - Array'/>
         <page name='CheckIfBST'/>
+        <page name='Insert-delete Node'/>
+        <page name='Boundry-Traversal'/>
+        <page name='Height - BFS'/>
     </pages>
 </playground>

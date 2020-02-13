@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='macos'>
+    <pages>
+        <page name='Strings'/>
+        <page name='Collections - Array'/>
+        <page name='Collection - Sets'/>
+        <page name='Collection - Dictionary'/>
+        <page name='Tupple '/>
+        <page name='Functions'/>
+        <page name='Closure'/>
+        <page name='Enumrations'/>
+        <page name='Properties'/>
+        <page name='SubScript'/>
+    </pages>
+</playground>

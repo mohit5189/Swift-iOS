@@ -22,6 +22,9 @@
          <FileRef
             location = "group:Tree.playground">
          </FileRef>
+         <FileRef
+            location = "group:/Users/mohitkumar/Documents/Learning/Swift-iOS/Searching-Sorting Algo.playground">
+         </FileRef>
       </Group>
    </Group>
    <Group
@@ -29,6 +32,9 @@
       name = "iOS Swift">
       <FileRef
          location = "group:GCD-Basics.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Swift.playground">
       </FileRef>
    </Group>
 </Workspace>
