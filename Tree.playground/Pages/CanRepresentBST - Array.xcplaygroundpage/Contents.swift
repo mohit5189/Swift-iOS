@@ -14,7 +14,7 @@ func canRepresentBST(_ array: [Int]) {
     for item in array {
         
         if item < root {
-            print("\(array)   -  False")
+            print("\(array)   -  False, Item = \(item)")
             return
         }
         
@@ -23,6 +23,8 @@ func canRepresentBST(_ array: [Int]) {
             print("root = \(root),   Item = \(item)")
             stack.popLast()
         }
+        print("inserted Item = \(item)")
+
         stack.append(item)
     }
     
@@ -30,7 +32,7 @@ func canRepresentBST(_ array: [Int]) {
 }
 
 canRepresentBST([10,8,5,2,12,15,16,11])
-canRepresentBST([2, 4, 3])
-canRepresentBST([2, 4, 1])
+//canRepresentBST([2, 4, 3])
+//canRepresentBST([2, 4, 1])
 
 //: [Next](@next)

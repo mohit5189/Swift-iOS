@@ -11,5 +11,10 @@
         <page name='Enumrations'/>
         <page name='Properties'/>
         <page name='SubScript'/>
+        <page name='Error Handling'/>
+        <page name='Protocol'/>
+        <page name='Generics'/>
+        <page name='Opaque Type - TODO'/>
+        <page name='Questions'/>
     </pages>
 </playground>

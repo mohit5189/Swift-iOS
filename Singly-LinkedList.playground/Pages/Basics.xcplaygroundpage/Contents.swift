@@ -19,7 +19,7 @@ LinkedList Drawback:
 
 class Node <T> {
     
-    // Can't have struct since struct will cause recursive issue
+    // Can't have structs ince struct will cause recursive issue
     var value: T
     var next: Node <T>?
     
@@ -135,6 +135,23 @@ class SinglyLinkedList <T> {
         
         head = prevNode
     }
+    
+    func swapPairs() {
+        if head != nil {
+            var currentNode = head
+            
+            while currentNode?.next != nil {
+                if let tempData = currentNode?.value, let nextData = currentNode?.next?.value {
+                    currentNode?.value = nextData
+                    currentNode?.next?.value = tempData
+                    
+                    currentNode = currentNode?.next?.next
+                }
+                
+            }
+        }
+    }
+    
 }
 
 var linkedList = SinglyLinkedList<String>()
@@ -151,5 +168,8 @@ linkedList.printLinkedList()
 linkedList.findMiddleElement()
 linkedList.reverse()
 linkedList.printLinkedList()
-linkedList.createLoop()
-print("\n loop exist = \(linkedList.isLoopExist())")
+//linkedList.createLoop()
+//print("\n loop exist = \(linkedList.isLoopExist())")
+linkedList.printLinkedList()
+linkedList.swapPairs()
+linkedList.printLinkedList()

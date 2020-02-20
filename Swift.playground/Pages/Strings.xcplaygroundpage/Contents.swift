@@ -58,7 +58,7 @@ myString1.insert("h", at: myString1.endIndex)
 print(myString1)
 
 
-// ============================== SubString ===============================
+// ============================== SubString (most dislike feature of swift) ===============================
 
 let greeting = "Hello, world!"
 let index = greeting.firstIndex(of: ",") ?? greeting.endIndex

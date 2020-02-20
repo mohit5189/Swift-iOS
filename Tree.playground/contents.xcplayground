@@ -9,5 +9,6 @@
         <page name='Insert-delete Node'/>
         <page name='Boundry-Traversal'/>
         <page name='Height - BFS'/>
+        <page name='CheckIfIdentical'/>
     </pages>
 </playground>

@@ -6,7 +6,7 @@
       name = "DS">
       <Group
          location = "container:"
-         name = "Stack">
+         name = "DS">
          <FileRef
             location = "group:Stack.playground">
          </FileRef>
@@ -25,6 +25,9 @@
          <FileRef
             location = "group:/Users/mohitkumar/Documents/Learning/Swift-iOS/Searching-Sorting Algo.playground">
          </FileRef>
+         <FileRef
+            location = "group:Array.playground">
+         </FileRef>
       </Group>
    </Group>
    <Group
@@ -35,6 +38,9 @@
       </FileRef>
       <FileRef
          location = "group:Swift.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Problems.playground">
       </FileRef>
    </Group>
 </Workspace>
