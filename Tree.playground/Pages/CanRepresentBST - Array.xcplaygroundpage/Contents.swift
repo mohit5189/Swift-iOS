@@ -14,17 +14,13 @@ func canRepresentBST(_ array: [Int]) {
     for item in array {
         
         if item < root {
-            print("\(array)   -  False, Item = \(item)")
             return
         }
         
         while stack.count != 0, stack[stack.count - 1] < item {
             root = Int32(stack[stack.count - 1])
-            print("root = \(root),   Item = \(item)")
             stack.popLast()
         }
-        print("inserted Item = \(item)")
-
         stack.append(item)
     }
     

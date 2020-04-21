@@ -3,5 +3,6 @@
     <pages>
         <page name='Non-Zero in last'/>
         <page name='Pair-Sum'/>
+        <page name='enumerate'/>
     </pages>
 </playground>

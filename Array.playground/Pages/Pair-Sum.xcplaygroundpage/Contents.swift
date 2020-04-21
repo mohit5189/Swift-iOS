@@ -34,7 +34,7 @@ func pairs(_ arr: [Int], _ sum: Int) -> Int {
             totalPairs += 1
         }
         
-        if sum - value == value {
+        if sum - value == value { // To svoid case like for sum 10 we will have only one key 5 then this logic required
             totalPairs -= 1
         }
     }
