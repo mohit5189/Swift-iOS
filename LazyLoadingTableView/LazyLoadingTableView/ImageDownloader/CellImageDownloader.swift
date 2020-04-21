@@ -23,16 +23,14 @@ extension UIImageView {
             self.backgroundColor = .gray
         }
         
-        DispatchQueue.main.async {
-            MKImageDownloader().downloadAndCacheImage(url: url, onSuccess: { (image, url) in
-                DispatchQueue.main.async {
-                    if UIImageView.urlStore[tmpAddress] == url {
+        MKImageDownloader().downloadAndCacheImage(url: url, onSuccess: { (image, url) in
+            DispatchQueue.main.async {
+            if UIImageView.urlStore[tmpAddress] == url {
                         self.image = image
                         self.backgroundColor = .clear
                     }
-                }
-            }) { error in
             }
+        }) { error in
         }
     }
 }
