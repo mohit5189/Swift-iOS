@@ -6,6 +6,6 @@
         <page name='Cancellable-Dispatch-After'/>
         <page name='Common-SuperView'/>
         <page name='Strings'/>
-        <page name='Protocols'/>
+        <page name='Generic Protocol'/>
     </pages>
 </playground>

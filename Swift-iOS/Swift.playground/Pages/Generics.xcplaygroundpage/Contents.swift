@@ -53,7 +53,7 @@ obj.printQueue()
  }
  
  Apple example for failed case:
- 
+ /
  func findIndex<T>(of valueToFind: T, in array:[T]) -> Int? {
      for (index, value) in array.enumerated() {
          if value == valueToFind { ----------------------- This will failed since T can be of any type and we can't match
