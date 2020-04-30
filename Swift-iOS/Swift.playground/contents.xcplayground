@@ -16,5 +16,6 @@
         <page name='Generics'/>
         <page name='Opaque Type - TODO'/>
         <page name='Questions'/>
+        <page name='Hashable'/>
     </pages>
 </playground>
