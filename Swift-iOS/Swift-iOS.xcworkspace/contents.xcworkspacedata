@@ -6,6 +6,13 @@
       name = "DS">
       <Group
          location = "container:"
+         name = "Problems">
+         <FileRef
+            location = "group:Problems.playground">
+         </FileRef>
+      </Group>
+      <Group
+         location = "container:"
          name = "DS">
          <FileRef
             location = "group:Stack.playground">
@@ -34,13 +41,19 @@
       location = "container:"
       name = "iOS Swift">
       <FileRef
-         location = "group:GCD-Basics.playground">
+         location = "group:Error Handling.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Dictionary.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Closure.playground">
+      </FileRef>
+      <FileRef
+         location = "group:/Users/mohitkumar/Documents/Learning/Swift-iOS/Swift-iOS/GCD.playground">
       </FileRef>
       <FileRef
          location = "group:Swift.playground">
-      </FileRef>
-      <FileRef
-         location = "group:Problems.playground">
       </FileRef>
    </Group>
 </Workspace>

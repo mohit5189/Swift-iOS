@@ -4,10 +4,8 @@
         <page name='Strings'/>
         <page name='Collections - Array'/>
         <page name='Collection - Sets'/>
-        <page name='Collection - Dictionary'/>
         <page name='Tupple '/>
         <page name='Functions'/>
-        <page name='Closure'/>
         <page name='Enumrations'/>
         <page name='Properties'/>
         <page name='SubScript'/>
@@ -16,6 +14,5 @@
         <page name='Generics'/>
         <page name='Opaque Type - TODO'/>
         <page name='Questions'/>
-        <page name='Hashable'/>
     </pages>
 </playground>
