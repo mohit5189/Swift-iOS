@@ -41,6 +41,9 @@
       location = "container:"
       name = "iOS Swift">
       <FileRef
+         location = "group:Enum.playground">
+      </FileRef>
+      <FileRef
          location = "group:Error Handling.playground">
       </FileRef>
       <FileRef
