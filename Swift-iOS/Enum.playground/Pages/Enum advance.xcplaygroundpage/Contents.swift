@@ -53,6 +53,7 @@ enum Test2: Int, RawRepresentable {
  https://andybargh.com/custom-enumeration-raw-values/
  */
 
+// can't find way to use RawRepresentable direct, using ExpressibleByStringLiteral
 struct MyStruct: ExpressibleByStringLiteral, Equatable {
     var name: String
     
@@ -77,3 +78,4 @@ enum StructTest: MyStruct {
 }
 
 print(StructTest.struct1.rawValue)
+

@@ -41,6 +41,9 @@
       location = "container:"
       name = "iOS Swift">
       <FileRef
+         location = "group:Map-Reduce-Filter.playground">
+      </FileRef>
+      <FileRef
          location = "group:Enum.playground">
       </FileRef>
       <FileRef

@@ -6,13 +6,13 @@
         <page name='Collection - Sets'/>
         <page name='Tupple '/>
         <page name='Functions'/>
-        <page name='Enumrations'/>
         <page name='Properties'/>
         <page name='SubScript'/>
-        <page name='Error Handling'/>
         <page name='Protocol'/>
         <page name='Generics'/>
         <page name='Opaque Type - TODO'/>
         <page name='Questions'/>
+        <page name='Any vs AnyObject'/>
+        <page name='as vs as? vs as!'/>
     </pages>
 </playground>
