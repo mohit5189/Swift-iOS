@@ -14,7 +14,10 @@ target 'NewsFeed_VIPER' do
 
   target 'NewsFeed_VIPERTests' do
     inherit! :search_paths
-    # Pods for testing
+    pod 'Quick', '2.1.0'
+    pod 'Nimble', '8.0.2'
+    pod 'OHHTTPStubs/Swift', '8.0.0'
+    pod 'Cuckoo', '1.1.0'
   end
 
 end

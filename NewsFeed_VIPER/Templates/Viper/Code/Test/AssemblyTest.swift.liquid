@@ -1,13 +1,13 @@
 import XCTest
 import Swinject
 import Cuckoo
-@testable import Lalamove
+@testable import NewsFeed_VIPER
 
 final class {{ module_info.name }}AssemblyTest: XCTestCase {
     func test{{ module_info.name }}DIAssembly() {
-        // Given DependencyConfigurator is setup to create Assembler with `{{ module_info.name }}DIAssembly`
+        // Given DependencyManager is setup to create Assembler with `{{ module_info.name }}DIAssembly`
         // When App Assembly set up a dependency
-        let sharedResolver = DependencyConfigurator.shared.resolver
+        let sharedResolver = DependencyManager.shared.resolver
 
         // Then: the container should be able to resolve classes in {{ module_info.name }} Module
         let moduleAssembly = sharedResolver.resolve({{ module_info.name }}Assembly.self)!

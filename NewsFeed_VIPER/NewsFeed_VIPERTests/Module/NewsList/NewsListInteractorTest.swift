@@ -1,7 +1,7 @@
 import XCTest
 import Swinject
 import Cuckoo
-@testable import Lalamove
+@testable import NewsFeed_VIPER
 
 final class NewsListInteractorTest: XCTestCase {
 

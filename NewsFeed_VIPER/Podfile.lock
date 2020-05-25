@@ -3,6 +3,22 @@ PODS:
   - AlamofireImage (3.5.2):
     - Alamofire (~> 4.8)
   - BonMot (5.3)
+  - Cuckoo (1.1.0)
+  - Nimble (8.0.2)
+  - OHHTTPStubs/Core (8.0.0)
+  - OHHTTPStubs/Default (8.0.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (8.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (8.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (8.0.0)
+  - OHHTTPStubs/Swift (8.0.0):
+    - OHHTTPStubs/Default
+  - Quick (2.1.0)
   - SnapKit (5.0.1)
   - Swinject (2.6.0)
   - SwinjectAutoregistration (2.6.0):
@@ -12,6 +28,10 @@ DEPENDENCIES:
   - Alamofire (= 4.8.2)
   - AlamofireImage (= 3.5.2)
   - BonMot (= 5.3)
+  - Cuckoo (= 1.1.0)
+  - Nimble (= 8.0.2)
+  - OHHTTPStubs/Swift (= 8.0.0)
+  - Quick (= 2.1.0)
   - SnapKit (= 5.0.1)
   - Swinject (= 2.6.0)
   - SwinjectAutoregistration (= 2.6.0)
@@ -21,6 +41,10 @@ SPEC REPOS:
     - Alamofire
     - AlamofireImage
     - BonMot
+    - Cuckoo
+    - Nimble
+    - OHHTTPStubs
+    - Quick
     - SnapKit
     - Swinject
     - SwinjectAutoregistration
@@ -29,10 +53,14 @@ SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
   BonMot: 0104d1b4eda54f4a4b7393d6559539ef25498fbd
+  Cuckoo: 6184a6bdc122b1a8e27b80198f76d1038ddbe861
+  Nimble: 622629381bda1dd5678162f21f1368cec7cbba60
+  OHHTTPStubs: 9cbce6364bec557cc3439aa6bb7514670d780881
+  Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   Swinject: 48a96cda93633cf2860697b4ce76ab5db9ebaca2
   SwinjectAutoregistration: 93a908f7543c401b0c315305ac0ae501efdbce89
 
-PODFILE CHECKSUM: 1e8d0f7a7587b32dc538159130e3a514ce6f8f42
+PODFILE CHECKSUM: a3b83efa41ebef30a7f51ff9df355c06b1ed39ed
 
 COCOAPODS: 1.9.2
