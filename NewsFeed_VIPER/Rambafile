@@ -10,20 +10,20 @@ xcodeproj_path: NewsFeed_VIPER.xcodeproj
 project_target: NewsFeed_VIPER
 
 # The file path for new modules
-project_file_path: NewsFeed_VIPER/Module
+project_file_path: NewsFeed_VIPER/Modules
 
 # The Xcode group path to new modules
-project_group_path: NewsFeed_VIPER/Module
+project_group_path: NewsFeed_VIPER/Modules
 
 ### Tests generation settings section
 # The tests target name
 test_target: NewsFeed_VIPERTests
 
 # The file path for new tests
-test_file_path: NewsFeed_VIPERTests/Module
+test_file_path: NewsFeed_VIPERTests/Modules
 
 # The Xcode group path to new tests
-test_group_path: NewsFeed_VIPERTests/Module
+test_group_path: NewsFeed_VIPERTests/Modules
 
 ### Dependencies settings section
 podfile_path: Podfile

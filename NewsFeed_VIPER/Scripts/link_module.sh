@@ -24,7 +24,7 @@ do
     fi
 done
 
-APP_ASSEMBLY_FILE_PATH="NewsFeed_VIPER/Module/App/AppAssembly/DependencyManager.swift"
+APP_ASSEMBLY_FILE_PATH="NewsFeed_VIPER/Modules/App/AppAssembly/DependencyManager.swift"
 ASSEMBLY_CONTRUCTOR="            ${MODULE_NAME}DIAssembly(),"
 if ! grep -q "$ASSEMBLY_CONTRUCTOR" $APP_ASSEMBLY_FILE_PATH; then
 	awk "/Assembler\(\[/ { print; print \"$ASSEMBLY_CONTRUCTOR\"; next }1" $APP_ASSEMBLY_FILE_PATH > $APP_ASSEMBLY_FILE_PATH.tmp
