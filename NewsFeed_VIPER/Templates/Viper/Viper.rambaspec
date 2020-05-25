@@ -1,0 +1,23 @@
+# Template information section
+name: Viper
+summary: VIPER
+author: Mohit Kumar
+version: 1.1.0
+license:
+
+# The declarations for code files
+code_files:
+- {name: Assembly.swift, path: Code/Assembly.swift.liquid}
+- {name: Controller.swift, path: Code/Controller.swift.liquid}
+- {name: Interactor.swift, path: Code/Interactor.swift.liquid}
+- {name: Router.swift, path: Code/Router.swift.liquid}
+- {name: View.swift, path: Code/View.swift.liquid}
+# The declarations for test files
+test_files:
+- {name: AssemblyTest.swift, path: Code/Test/AssemblyTest.swift.liquid}
+- {name: InteractorTest.swift, path: Code/Test/InteractorTest.swift.liquid}
+- {name: RouterTest.swift, path: Code/Test/RouterTest.swift.liquid}
+- {name: ViewControllerTest.swift, path: Code/Test/ViewControllerTest.swift.liquid}
+
+# Template dependencies
+dependencies:

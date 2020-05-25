@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'NewsFeed_VIPER' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+    pod 'Swinject', '2.6.0'
+    pod 'SwinjectAutoregistration', '2.6.0'
+    pod 'BonMot', '5.3'
+    pod 'Alamofire', '4.8.2'
+    pod 'AlamofireImage', '3.5.2'
+    pod 'SnapKit', '5.0.1'
+
+  target 'NewsFeed_VIPERTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

@@ -1,0 +1,37 @@
+import XCTest
+import Swinject
+import Cuckoo
+@testable import Lalamove
+
+final class {{ module_info.name }}InteractorTest: XCTestCase {
+
+    private var container: Container!
+    private var interactor: {{ module_info.name }}Interactor!
+
+    override func setUp() {
+        super.setUp()
+
+        // Setup Mock dependency injection
+        container = Container()
+        container.autoregister({{ module_info.name }}InteractorProtocol.self, initializer: {{ module_info.name }}Interactor.init)
+
+        /* Please Add {{ module_info.name }}Interactor's dependency here.
+        * If {{ module_info.name }}Interactor's constructor requires an injected Protocol: init(eventService: EventTrackerProtocol)
+        * Please add: container.autoregister(EventTrackerProtocol.self, initializer: MockEventTrackerProtocol.init).inObjectScope(.container)
+        */
+
+        interactor = container.resolve({{ module_info.name }}InteractorProtocol.self) as? {{ module_info.name }}Interactor
+    }
+
+    override func tearDown() {
+        // Clean up all injected mock objects
+        container.resetObjectScope(ObjectScope.container)
+        super.tearDown()
+    }
+
+    func test{{ module_info.name }}InteractorInit() {
+        XCTAssertNotNil(interactor)
+    }
+
+    // Please add tests for {{ module_info.name }}InteractorProtocol's functions
+}

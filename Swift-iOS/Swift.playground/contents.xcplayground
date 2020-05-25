@@ -14,5 +14,6 @@
         <page name='Questions'/>
         <page name='Any vs AnyObject'/>
         <page name='as vs as? vs as!'/>
+        <page name='Enum-Class-Struct'/>
     </pages>
 </playground>

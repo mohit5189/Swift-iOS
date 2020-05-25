@@ -1,0 +1,35 @@
+import UIKit
+import Swinject
+import SwinjectAutoregistration
+
+final class {{ module_info.name }}Assembly {
+    private let resolver: Resolver
+
+    init(resolver: Resolver) {
+        self.resolver = resolver
+    }
+
+    func module(closeCompletion: VoidHandler? = nil) -> UIViewController {
+        let view = resolver.resolve({{ module_info.name }}ViewProtocol.self)!
+        let interactor = resolver.resolve({{ module_info.name }}InteractorProtocol.self)!
+        let router = resolver.resolve({{ module_info.name }}RouterProtocol.self)!
+
+        let controller = {{ module_info.name }}ViewController(view: view, interactor: interactor, router: router)
+
+        router.sourceViewController = controller
+        router.closeCompletion = closeCompletion
+
+        view.presenter = controller
+
+        return controller
+    }
+}
+
+final class {{ module_info.name }}DIAssembly: Assembly {
+    func assemble(container: Container) {
+        container.register({{ module_info.name }}Assembly.self) { {{ module_info.name }}Assembly(resolver: $0) }
+        container.autoregister({{ module_info.name }}ViewProtocol.self, initializer: {{ module_info.name }}View.init)
+        container.autoregister({{ module_info.name }}InteractorProtocol.self, initializer: {{ module_info.name }}Interactor.init)
+        container.autoregister({{ module_info.name }}RouterProtocol.self, initializer: {{ module_info.name }}Router.init)
+    }
+}

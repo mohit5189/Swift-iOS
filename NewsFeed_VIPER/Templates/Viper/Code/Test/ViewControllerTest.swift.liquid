@@ -1,0 +1,42 @@
+import XCTest
+import Swinject
+import Cuckoo
+@testable import Lalamove
+
+final class {{ module_info.name }}ViewControllerTest: XCTestCase {
+    private var container: Container!
+    private var viewController: {{ module_info.name }}ViewController!
+
+    private var mockView: Mock{{ module_info.name }}ViewProtocol!
+    private var mockInteractor: Mock{{ module_info.name }}InteractorProtocol!
+    private var mockRouter: Mock{{ module_info.name }}RouterProtocol!
+
+    override func setUp() {
+        super.setUp()
+
+        container = Container()
+        container.autoregister({{ module_info.name }}ViewProtocol.self, initializer: Mock{{ module_info.name }}ViewProtocol.init).inObjectScope(.container)
+        container.autoregister({{ module_info.name }}InteractorProtocol.self, initializer: Mock{{ module_info.name }}InteractorProtocol.init).inObjectScope(.container)
+        container.autoregister({{ module_info.name }}RouterProtocol.self, initializer: Mock{{ module_info.name }}RouterProtocol.init).inObjectScope(.container)
+
+        container.autoregister({{ module_info.name }}ViewController.self, initializer: {{ module_info.name }}ViewController.init).inObjectScope(.container)
+
+        viewController = container.resolve({{ module_info.name }}ViewController.self)
+
+        mockView = container.resolve({{ module_info.name }}ViewProtocol.self) as? Mock{{ module_info.name }}ViewProtocol
+        mockInteractor = container.resolve({{ module_info.name }}InteractorProtocol.self) as? Mock{{ module_info.name }}InteractorProtocol
+        mockRouter = container.resolve({{ module_info.name }}RouterProtocol.self) as? Mock{{ module_info.name }}RouterProtocol
+    }
+
+    override func tearDown() {
+        container.resetObjectScope(ObjectScope.container)
+        container = nil
+        super.tearDown()
+    }
+
+    func testInit() {
+        XCTAssertNotNil(viewController, "controller to test should not be nil")
+    }
+
+    // Please add tests for {{ module_info.name }}ViewController's functions
+}

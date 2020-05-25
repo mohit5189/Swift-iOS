@@ -105,3 +105,33 @@ wrapperObj.verifyWrapper()
  0
 
  */
+
+/*
+ Property wrappers can also have properties of their own, which enables further customization, and even makes it possible to inject dependencies into our wrapper types.
+
+Example - User default
+ */
+
+@propertyWrapper
+struct UserDefaultsBacked<T> {
+    var key: String
+    var storage: UserDefaults = .standard
+    
+    var wrappedValue: T? {
+        get { storage.value(forKey: key) as? T }
+        set { storage.setValue(newValue, forKey: key) }
+    }
+}
+
+/*
+ Just like any other struct, our above UserDefaultsBacked type will automatically get a memberwise initializer with default arguments for all properties that have a default value — which means that we’ll be able to initialize instances of it by simply specifying which UserDefaults key that we want each property to be backed by:
+
+ */
+struct SettingsViewModel {
+    @UserDefaultsBacked(key: "mark-as-read")
+    var autoMarkMessagesAsRead: Bool
+
+    @UserDefaultsBacked(key: "search-page-size")
+    var numberOfSearchResultsPerPage: Int
+}
+
