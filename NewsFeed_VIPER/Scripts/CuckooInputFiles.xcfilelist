@@ -1,0 +1,5 @@
+${SRCROOT}/NewsFeed_VIPER/Modules/NewsList/NewsListView.swift
+${SRCROOT}/NewsFeed_VIPER/Modules/NewsList/NewsListInteractor.swift
+${SRCROOT}/NewsFeed_VIPER/Modules/NewsList/NewsListRouter.swift
+${SRCROOT}/UserApp/Misc/Routers/Routers.swift
+${SRCROOT}/UserApp/Misc/Views/AnyView.swift
