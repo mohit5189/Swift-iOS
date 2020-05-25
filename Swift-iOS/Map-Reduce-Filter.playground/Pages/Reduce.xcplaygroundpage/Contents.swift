@@ -20,15 +20,15 @@ var sum3 = array.reduce(0) { (result: Int, num: Int) -> Int in
 
 print(sum3)
 
+
 var sum4 = array.myReduce(0) { (result: Int, num: Int) -> Int in
     return result + num
 }
-
 print(sum4)
 
 // Reduce custom
 extension Array {
-    func myReduce(_ initialValue: Element, _ closure: (Element, Element) -> Element) -> Element {
+    public func myReduce(_ initialValue: Element, _ closure: (Element, Element) -> Element) -> Element {
         var result = initialValue
         for num in self {
             result = closure(result, num)

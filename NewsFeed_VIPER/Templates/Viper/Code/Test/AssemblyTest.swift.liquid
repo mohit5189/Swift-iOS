@@ -1,0 +1,63 @@
+import XCTest
+import Swinject
+import Cuckoo
+@testable import Lalamove
+
+final class {{ module_info.name }}AssemblyTest: XCTestCase {
+    func test{{ module_info.name }}DIAssembly() {
+        // Given DependencyConfigurator is setup to create Assembler with `{{ module_info.name }}DIAssembly`
+        // When App Assembly set up a dependency
+        let sharedResolver = DependencyConfigurator.shared.resolver
+
+        // Then: the container should be able to resolve classes in {{ module_info.name }} Module
+        let moduleAssembly = sharedResolver.resolve({{ module_info.name }}Assembly.self)!
+        let view = sharedResolver.resolve({{ module_info.name }}ViewProtocol.self)!
+        let interactor = sharedResolver.resolve({{ module_info.name }}InteractorProtocol.self)!
+        let router = sharedResolver.resolve({{ module_info.name }}RouterProtocol.self)!
+        XCTAssertNotNil(moduleAssembly)
+        XCTAssertTrue(view is {{ module_info.name }}View)
+        XCTAssertTrue(interactor is {{ module_info.name }}Interactor)
+        XCTAssertTrue(router is {{ module_info.name }}Router)
+    }
+
+    // MARK: Test creating connection between interactor, presenter & view
+    func test{{ module_info.name }}Assembly() {
+        var dummyInteractor: Mock{{ module_info.name }}InteractorProtocol!
+        var dummyView: Mock{{ module_info.name }}ViewProtocol!
+        var dummyRouter: Mock{{ module_info.name }}RouterProtocol!
+
+        // Given an Assembly with mock dependency
+        let dummyContainer = Container()
+        dummyContainer.register({{ module_info.name }}InteractorProtocol.self) { _ in
+            dummyInteractor = Mock{{ module_info.name }}InteractorProtocol()
+            return dummyInteractor
+        }
+        dummyContainer.register({{ module_info.name }}ViewProtocol.self) { _ in
+            dummyView = Mock{{ module_info.name }}ViewProtocol()
+            stub(dummyView) { when($0.presenter.set(any())).thenDoNothing() }
+            return dummyView
+        }
+        dummyContainer.register({{ module_info.name }}RouterProtocol.self) { _ in
+            let mockRouter = Mock{{ module_info.name }}RouterProtocol()
+            stub(mockRouter) {
+                when($0.sourceViewController.set(any())).thenDoNothing()
+                when($0.closeCompletion.set(any())).thenDoNothing()
+            }
+            dummyRouter = mockRouter
+            return dummyRouter
+        }
+
+        let moduleAssembly = {{ module_info.name }}Assembly(resolver: dummyContainer)
+
+        // When creating controller by the assembly's function
+        let presenter = moduleAssembly.module()
+
+        // Then: respective container factory blocks will fire
+        XCTAssertTrue(presenter is {{ module_info.name }}ViewController)
+        XCTAssertNotNil(dummyInteractor)
+        XCTAssertNotNil(dummyView)
+        XCTAssertNotNil(dummyRouter)
+        verify(dummyRouter).sourceViewController.set(ParameterMatcher<UIViewController?> { $0 === presenter })
+        verify(dummyView).presenter.set(ParameterMatcher<{{ module_info.name }}PresenterProtocol?> { $0 as! {{ module_info.name }}ViewController === presenter })
+    }
+}

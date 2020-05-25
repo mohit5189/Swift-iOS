@@ -23,7 +23,10 @@ var mapArray4 = mapArray1.myMap ({(value: Int) -> Int in
     return value * 2
 })
 
+var mapArray5 = mapArray1.myMap { $0 * 2 }
+
 print(mapArray4)
+print(mapArray5)
 
 // Writing own map function
 
