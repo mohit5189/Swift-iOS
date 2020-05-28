@@ -7,7 +7,13 @@
 5- Add run script in Test target, which will create mock before files compilation.
 
 # Steps to create Module:
-Go to root folder through terminal
-Run in terminal generamba gen [Module-Name] viper
-Then run scripts/link_module.sh [Module-Name] -> It will create entry in DependencyManager (defined in script), also in Scripts/CuckooInputFiles.xcfilelist
-You can find module in Modules folder.
+1. Go to root folder through terminal
+
+2. Run in terminal generamba gen [Module-Name] viper
+
+3. Then run scripts/link_module.sh [Module-Name] -> It will create entry in DependencyManager (defined in script), also in Scripts/CuckooInputFiles.xcfilelist
+
+4. You can find module in Modules folder.
+
+
+
