@@ -127,6 +127,7 @@ struct UserDefaultsBacked<T> {
  Just like any other struct, our above UserDefaultsBacked type will automatically get a memberwise initializer with default arguments for all properties that have a default value — which means that we’ll be able to initialize instances of it by simply specifying which UserDefaults key that we want each property to be backed by:
 
  */
+
 struct SettingsViewModel {
     @UserDefaultsBacked(key: "mark-as-read")
     var autoMarkMessagesAsRead: Bool
