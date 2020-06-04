@@ -1,4 +1,5 @@
 
+/*
 Open -> Public -> Internal -> filePrivate -> Private
 
 
@@ -11,7 +12,7 @@ Internal (Default access level) -> When we don't wana expose method from a modul
 Fileprivate -> the functionality defined with a fileprivate access level can only be accessed from within the swift file where it is defined
 
 Private -> Private access restricts the use of an entity to the enclosing declaration, and to extensions of that declaration that are in the same file
-
+*/
 
 
 // Private example

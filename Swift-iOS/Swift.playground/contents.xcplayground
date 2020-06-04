@@ -16,5 +16,6 @@
         <page name='as vs as? vs as!'/>
         <page name='Enum-Class-Struct'/>
         <page name='Universal Self'/>
+        <page name='Access-Modifier'/>
     </pages>
 </playground>
