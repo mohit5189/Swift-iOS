@@ -15,22 +15,22 @@
          location = "container:"
          name = "DS">
          <FileRef
+            location = "group:Searching-Sorting Algo.playground">
+         </FileRef>
+         <FileRef
+            location = "group:Singly-LinkedList.playground">
+         </FileRef>
+         <FileRef
             location = "group:Stack.playground">
          </FileRef>
          <FileRef
             location = "group:Queue.playground">
          </FileRef>
          <FileRef
-            location = "group:/Users/mohitkumar/Documents/Learning/Swift-iOS/Singly-LinkedList.playground">
-         </FileRef>
-         <FileRef
             location = "group:Doubly-LinkedList.playground">
          </FileRef>
          <FileRef
             location = "group:Tree.playground">
-         </FileRef>
-         <FileRef
-            location = "group:/Users/mohitkumar/Documents/Learning/Swift-iOS/Searching-Sorting Algo.playground">
          </FileRef>
          <FileRef
             location = "group:Array.playground">
@@ -41,7 +41,7 @@
       location = "container:"
       name = "iOS Swift">
       <FileRef
-         location = "group:PropertyWrapper.playground">
+         location = "group:Tricky-Questions.playground">
       </FileRef>
       <FileRef
          location = "group:Map-Reduce-Filter.playground">

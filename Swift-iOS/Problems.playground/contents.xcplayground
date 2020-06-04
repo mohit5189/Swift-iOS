@@ -7,5 +7,6 @@
         <page name='Common-SuperView'/>
         <page name='Strings'/>
         <page name='Generic Protocol'/>
+        <page name='Delete-Linkedlist_node-no-head-pointer'/>
     </pages>
 </playground>
