@@ -4,6 +4,6 @@
         <page name='Question 1'/>
         <page name='Question 2'/>
         <page name='Question 3'/>
-        <page name='Access Modifier'/>
+        <page name='Swift performance tips'/>
     </pages>
 </playground>

@@ -21,22 +21,6 @@ class Test: MyProtocol {
 
 // Expose protocol methods based on class type
 
-// error: Question 3.xcplaygroundpage:24:32: error: generic parameter 'Self' cannot be a subclass of both 'MyClass2' and 'MyClass'
-extension MyProtocol where Self: MyClass2 {
-    func test2() {}
-}
-
-class Test2: MyClass, MyProtocol {
-    func test() {
-        
-    }
-    
-    func test2() {
-        
-    }
-}
-
-
 // Solution for exposing method to particular type only
 
 class MyClass<Element> {

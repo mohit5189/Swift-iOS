@@ -47,10 +47,16 @@
          location = "group:Map-Reduce-Filter.playground">
       </FileRef>
       <FileRef
+         location = "group:Static VS Dynamic dispatch.playground">
+      </FileRef>
+      <FileRef
          location = "group:Enum.playground">
       </FileRef>
       <FileRef
          location = "group:Error Handling.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Struct vs Class.playground">
       </FileRef>
       <FileRef
          location = "group:Dictionary.playground">
