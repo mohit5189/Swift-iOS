@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios'>
+    <pages>
+        <page name='Remove-Duplicate-Array'/>
+        <page name='Find Missing number in Array'/>
+        <page name='Find duplicate number'/>
+        <page name='Kth largest and smallest'/>
+        <page name='Non-zero in last'/>
+        <page name='Pair Sum'/>
+    </pages>
+</playground>

@@ -3,5 +3,6 @@
     <pages>
         <page name='Enum-Class-Struct'/>
         <page name='More details  struct vs class'/>
+        <page name='Summery'/>
     </pages>
 </playground>
