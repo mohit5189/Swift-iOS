@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios'>
+    <pages>
+        <page name='Pangram'/>
+        <page name='Remove non char'/>
+        <page name='Find Different Char 2 strings'/>
+        <page name='First non-repearting char'/>
+        <page name='Remove extra parenthasis'/>
+        <page name='Reverse words string'/>
+        <page name='Longest-Palindrom substring'/>
+    </pages>
+</playground>

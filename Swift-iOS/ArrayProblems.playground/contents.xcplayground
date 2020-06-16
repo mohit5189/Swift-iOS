@@ -7,5 +7,7 @@
         <page name='Kth largest and smallest'/>
         <page name='Non-zero in last'/>
         <page name='Pair Sum'/>
+        <page name='Largest-Consecutive Sum'/>
+        <page name='Search in rotated Array'/>
     </pages>
 </playground>

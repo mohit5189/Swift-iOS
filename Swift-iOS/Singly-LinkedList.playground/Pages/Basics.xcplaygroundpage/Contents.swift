@@ -152,6 +152,26 @@ class SinglyLinkedList <T> {
         }
     }
     
+    // kth element from last
+    // move temp to position from start, now move main and temp until temp reach last
+    func kthElement(position: Int) {
+        if head != nil {
+            var currentNode = head
+            var mainNode = head
+            var count = 1
+            while count <= position {
+                currentNode = currentNode?.next
+                count += 1
+            }
+            
+            while currentNode != nil {
+                currentNode = currentNode?.next
+                mainNode = mainNode?.next
+            }
+            print("\(position) node = \(mainNode?.value)")
+        }
+    }
+    
 }
 
 var linkedList = SinglyLinkedList<String>()
@@ -173,3 +193,4 @@ linkedList.printLinkedList()
 linkedList.printLinkedList()
 linkedList.swapPairs()
 linkedList.printLinkedList()
+linkedList.kthElement(position: 3)

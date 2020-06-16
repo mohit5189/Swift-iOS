@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='macos'>
     <pages>
-        <page name='Remove-duplicate-array'/>
         <page name='TableView-Dequeue Custom'/>
         <page name='Cancellable-Dispatch-After'/>
         <page name='Common-SuperView'/>
-        <page name='Strings'/>
         <page name='Generic Protocol'/>
         <page name='Delete-Linkedlist_node-no-head-pointer'/>
+        <page name='Make own hashmap'/>
     </pages>
 </playground>
