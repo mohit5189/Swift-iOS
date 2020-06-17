@@ -9,5 +9,10 @@
         <page name='Pair Sum'/>
         <page name='Largest-Consecutive Sum'/>
         <page name='Search in rotated Array'/>
+        <page name='Spiral Matrix Print'/>
+        <page name='zig-zag matrix'/>
+        <page name='Diognal Traversal of matrix'/>
+        <page name='Anti Spiral Matrix'/>
+        <page name='Next Greater element in array'/>
     </pages>
 </playground>

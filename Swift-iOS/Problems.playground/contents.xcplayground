@@ -7,5 +7,6 @@
         <page name='Generic Protocol'/>
         <page name='Delete-Linkedlist_node-no-head-pointer'/>
         <page name='Make own hashmap'/>
+        <page name='LRU Cache'/>
     </pages>
 </playground>
