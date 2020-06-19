@@ -15,6 +15,7 @@
         <page name='Anti Spiral Matrix'/>
         <page name='Next Greater element in array'/>
         <page name='Maximiz profit -&gt; stock problem'/>
-        <page name='LCM of 2 number'/>
+        <page name='LCM &amp; GCD of 2 number'/>
+        <page name='LCM and GCD in Array'/>
     </pages>
 </playground>

@@ -8,5 +8,6 @@
         <page name='Remove extra parenthasis'/>
         <page name='Reverse words string'/>
         <page name='Longest-Palindrom substring'/>
+        <page name='String to Int'/>
     </pages>
 </playground>
