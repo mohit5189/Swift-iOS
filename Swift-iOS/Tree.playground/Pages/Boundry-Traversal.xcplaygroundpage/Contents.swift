@@ -103,7 +103,7 @@ class Test {
         }
 
         if node.right != nil {
-            printLeftBoundries(node.right)
+            printRightBoundries(node.right)
             print(" \(node.value)") // to make sure down to up manner
         }
 
