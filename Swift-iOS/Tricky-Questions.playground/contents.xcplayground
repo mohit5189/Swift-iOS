@@ -9,5 +9,6 @@
         <page name='use of setter'/>
         <page name='memory management 2'/>
         <page name='comparable'/>
+        <page name='DispatchQueue Async UI update'/>
     </pages>
 </playground>
