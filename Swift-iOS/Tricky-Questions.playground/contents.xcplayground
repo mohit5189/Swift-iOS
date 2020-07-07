@@ -10,5 +10,6 @@
         <page name='memory management 2'/>
         <page name='comparable'/>
         <page name='DispatchQueue Async UI update'/>
+        <page name='LayoutSubview VS SetNeedLayout vc layoutIfneeded'/>
     </pages>
 </playground>
