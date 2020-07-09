@@ -11,5 +11,9 @@
         <page name='comparable'/>
         <page name='DispatchQueue Async UI update'/>
         <page name='LayoutSubview VS SetNeedLayout vc layoutIfneeded'/>
+        <page name='Swift 5.3 new things'/>
+        <page name='Lazy vs computed'/>
+        <page name='Resume Downloading in iOS'/>
+        <page name='Core Data Links'/>
     </pages>
 </playground>
