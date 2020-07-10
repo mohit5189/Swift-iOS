@@ -47,7 +47,7 @@
       location = "container:"
       name = "iOS Swift">
       <FileRef
-         location = "group:Tricky-Questions.playground">
+         location = "group:/Users/mohitkumar/Documents/Learning/Swift-iOS/Swift-iOS/Swift Questions.playground">
       </FileRef>
       <FileRef
          location = "group:Map-Reduce-Filter.playground">
