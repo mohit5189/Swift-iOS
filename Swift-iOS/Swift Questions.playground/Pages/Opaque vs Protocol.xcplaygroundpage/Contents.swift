@@ -36,6 +36,10 @@ struct Yplane: Plane {
  2. This problem solved by opaque type, it force to return only one time, so compiler can optimise and is aware about this. SO when performing equalable (assume 2 method return equalable, but one return string and another integer), compiler will gove error
  
  
+ Example if you return Equatable protocol from method, it will first give error "Protocol 'Equatable' can only be used as a generic constraint because it has Self or associated type requirements"
+ 
+ Reason - It has defined associated type, any protocol with associated type can be used as generic only
+ 
 
  
  */
