@@ -47,7 +47,13 @@
       location = "container:"
       name = "iOS Swift">
       <FileRef
-         location = "group:/Users/mohitkumar/Documents/Learning/Swift-iOS/Swift-iOS/Swift Questions.playground">
+         location = "group:@Objc use.playground">
+      </FileRef>
+      <FileRef
+         location = "group:GCD.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Swift Questions.playground">
       </FileRef>
       <FileRef
          location = "group:Map-Reduce-Filter.playground">
@@ -71,13 +77,10 @@
          location = "group:Closure.playground">
       </FileRef>
       <FileRef
-         location = "group:/Users/mohitkumar/Documents/Learning/Swift-iOS/Swift-iOS/@Objc use.playground">
-      </FileRef>
-      <FileRef
-         location = "group:/Users/mohitkumar/Documents/Learning/Swift-iOS/Swift-iOS/GCD.playground">
-      </FileRef>
-      <FileRef
          location = "group:Swift.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Swift-5.5.playground">
       </FileRef>
    </Group>
 </Workspace>

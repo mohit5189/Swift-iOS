@@ -20,11 +20,11 @@ func findPivot(array: [Int], low: Int, high: Int) -> Int {
         return low
     }
     let mid = (low + high)  / 2
-    if array[mid] > array[mid + 1] {
+    if mid <= high && array[mid] > array[mid + 1] {
         return mid
-    } else if array[mid] < array[mid + 1] {
+    } else if mid >= low && array[mid] < array[mid - 1] {
         return mid - 1
-    } else if array[low] > array [mid]{
+    } else if array[low] > array[mid]{
         return findPivot(array: array, low: low, high: mid-1)
     } else {
         return findPivot(array: array, low: mid + 1, high: high)

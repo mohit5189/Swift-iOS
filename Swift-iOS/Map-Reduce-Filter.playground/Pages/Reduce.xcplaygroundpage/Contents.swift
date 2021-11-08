@@ -9,7 +9,7 @@ var sum = array.reduce (0,+) // first element is default value, second is closur
 print(sum)
 
 // Expended version
-var sum2 = array.reduce(0) { $0 + $1 }
+var sum2 = array.reduce(1) { $0 + $1 }
 print(sum2)
 
 // More expended

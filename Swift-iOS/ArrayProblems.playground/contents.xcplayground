@@ -5,7 +5,6 @@
         <page name='Find Missing number in Array'/>
         <page name='Find duplicate number'/>
         <page name='Kth largest and smallest'/>
-        <page name='Non-zero in last'/>
         <page name='Pair Sum'/>
         <page name='Largest-Consecutive Sum'/>
         <page name='Search in rotated Array'/>
@@ -17,5 +16,7 @@
         <page name='Maximiz profit -&gt; stock problem'/>
         <page name='LCM &amp; GCD of 2 number'/>
         <page name='LCM and GCD in Array'/>
+        <page name='Move Non-zero in last'/>
+        <page name='Rotate Array'/>
     </pages>
 </playground>

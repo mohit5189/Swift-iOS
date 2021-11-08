@@ -29,3 +29,6 @@ func makeTrapezoid() -> some Shape {
 }
 let trapezoid = makeTrapezoid()
 print(trapezoid.draw())
+
+
+//https://www.hackingwithswift.com/articles/187/how-to-use-opaque-return-types-in-swift-5-1
