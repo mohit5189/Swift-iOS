@@ -58,7 +58,7 @@ func checkIfIdentical(_ root1: Node?, _ root2: Node?) -> Bool {
 }
 
 var testArray = [10, 5, 1, 7, 40, 50, 60]
-var testArray2 = [10, 5, 1, 8, 40, 50, 60]
+var testArray2 = [10, 5, 1, 7, 40, 50, 60, 70]
 var obj1 = Test()
 var obj2 = Test()
 var node1 = obj1.construct(testArray)

@@ -2,6 +2,7 @@
 // Q - Does lazy and computed call every time when we access
 
 // Lazy example
+// Call just once
 
 class Lazy {
     lazy var x: [Int] =  {

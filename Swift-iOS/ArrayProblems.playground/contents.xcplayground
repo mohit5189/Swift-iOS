@@ -18,5 +18,7 @@
         <page name='LCM and GCD in Array'/>
         <page name='Move Non-zero in last'/>
         <page name='Rotate Array'/>
+        <page name='Plus One Array'/>
+        <page name='Rotate Image'/>
     </pages>
 </playground>

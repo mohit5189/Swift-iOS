@@ -24,17 +24,14 @@ class Solution {
             }
         }
 
-        var length = finalString.length
+        var maxNumber = myPow(2, 31)
+        if isPositive {
+            maxNumber -= 1
+        }
         for char in finalString {
            var intValue = char.unicodeScalars.first!.value - "0".unicodeScalars.first!.value
-           finalNumber += Int(intValue) * myPow(10, length-1)
-           length -= 1
-        }
-
-        var maxNumber = myPow(2, 31)
-
-        if finalNumber > maxNumber {
-            finalNumber = maxNumber
+            var result = finalNumber * 10 + Int(intValue)
+           finalNumber = result > maxNumber ? maxNumber : result
         }
 
         return isPositive ? finalNumber : finalNumber * -1

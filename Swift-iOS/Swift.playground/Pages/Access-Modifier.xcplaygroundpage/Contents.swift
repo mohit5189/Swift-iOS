@@ -19,7 +19,7 @@ Private -> Private access restricts the use of an entity to the enclosing declar
 
 // A.swift
 class A {
- private var name = "First Letter"
+ file var name = "First Letter"
 }
 extension A {
 func printName(){

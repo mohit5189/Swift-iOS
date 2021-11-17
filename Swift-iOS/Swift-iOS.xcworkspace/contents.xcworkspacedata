@@ -82,5 +82,8 @@
       <FileRef
          location = "group:Swift-5.5.playground">
       </FileRef>
+      <FileRef
+         location = "group:Weak vs Unowned.playground">
+      </FileRef>
    </Group>
 </Workspace>
