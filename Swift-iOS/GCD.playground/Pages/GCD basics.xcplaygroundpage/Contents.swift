@@ -1,5 +1,6 @@
 import UIKit
 
+// https://medium.com/geekculture/threads-in-ios-gcd-nsoperation-part-1-64e460c0bdea
 /*
  Main, global and custom queues
  The main queue is a serial one, every task on the main queue runs on the main thread.
